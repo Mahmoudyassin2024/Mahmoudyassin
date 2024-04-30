@@ -1,0 +1,675 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.mahmoud {
+    font-size: 12px;
+    margin-top: 50px;
+    color: #222;
+    text-decoration: none;
+    font-weight: 600;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+  }
+
+    @keyframes slideRight {
+    100% {
+        transform: translatex(100px);
+        opacity: 1;
+    }
+  
+    0% {
+        transform: translatex(0);
+        opacity: 0;
+    }
+  
+  }
+
+.container{
+    width: 100%;height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.container .header{
+    width: 100%;
+    margin: 2% auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.container .header .logo {
+    width: 50px;
+    height: 50px;
+    background: url(sedan.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container .header .nav ul{
+    display: flex;
+    gap: 30px;
+}
+.container .header .nav ul li{
+    font-size: 14x;
+    font-weight: 500;
+    list-style: none;
+    letter-spacing: 1px;
+}
+.container .header .nav ul li a{
+    padding: 10px;
+    outline: none;
+    text-decoration: none;
+    cursor: pointer;
+    color: #242b2e;
+}
+.container .header .nav ul li a:hover{
+    border-bottom: 2px solid #4facfe;
+}
+.container .header .buttons{
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+
+}
+.container .header .buttons button{
+    width: 120px;height: 40px;
+    border-radius: 20px;
+    border: none;outline: none;
+    cursor: pointer;
+    font-weight: 500;
+    color: #242b2e;
+}
+
+.container .header .buttons button:hover{
+    color: #ffff;
+    background-image: linear-gradient(to right,#4facfe 20%,#00f2fe 80%);
+}
+
+.container .main_content{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    padding: 30px;
+}
+
+.container .main_content .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: #242b2e;
+
+}
+
+.container .main_content .content h1{
+    font-size: 52px;
+    letter-spacing: 2px;
+}
+
+.container .main_content .content span{
+    font-size: 30px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.container .main_content .content p{
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 500;
+
+}
+.container .main_content .car_img{
+    width: 100%;
+    height: 300px;
+    background: url(porche.jpeg);
+    background-repeat: no-repeat;background-size: cover;
+}
+
+.container .futures{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.container .futures .engine,.transmission,.power,.brake{
+    width: 300px;
+    height: 90px;
+    padding: 4px;
+    margin: 25px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.container .futures .engine img,.transmission img,.power img,.brake img{
+    width: 100px;height: 80px;
+    padding: 3px;
+    border-radius: 10px;
+
+}
+.container .futures .engine:hover,.transmission:hover,.power:hover,.brake:hover{
+    background-image: linear-gradient(to right,#4facfe 20%,#00f2fe 80%);
+    color: #ffff;
+    font-weight: 500;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.containerbmw{
+    width: 100%;height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.containerbmw .headerbmw{
+    width: 100%;
+    margin: 2% auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.containerbmw .headerbmw .buttonsbmw{
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+
+}
+.containerbmw .headerbmw .buttonsbmw button{
+    width: 120px;height: 40px;
+    border-radius: 20px;
+    border: none;outline: none;
+    cursor: pointer;
+    font-weight: 500;
+    color: #242b2e;
+}
+
+.containerbmw .headerbmw .buttonsbmw button:hover{
+    color: #ffff;
+    background-image: linear-gradient(to right,#26ba69 20%,#00ff73 80%);
+}
+
+.containerbmw .main_contentbmw{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    padding: 30px;
+}
+
+.containerbmw .main_contentbmw .contentbmw{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: #242b2e;
+
+}
+
+.containerbmw .main_contentbmw .contentbmw h1{
+    font-size: 52px;
+    letter-spacing: 2px;
+}
+
+.containerbmw .main_contentbmw .contentbmw span{
+    font-size: 30px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.containerbmw .main_contentbmw .contentbmw p{
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 500;
+
+}
+.containerbmw .main_contentbmw .car_imgbmw{
+    width: 100%;
+    height: 300px;
+    background: url(bmw.jpeg);
+    background-repeat: no-repeat;background-size: cover;
+}
+
+.containerbmw .futuresbmw{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.containerbmw .futuresbmw .enginebmw,.transmissionbmw,.powerbmw,.brakebmw{
+    width: 300px;
+    height: 90px;
+    padding: 4px;
+    margin: 25px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.containerbmw .futuresbmw .enginebmw img,.transmissionbmw img,.powerbmw img,.brakebmw img{
+    width: 100px;height: 80px;
+    padding: 3px;
+    border-radius: 10px;
+
+}
+.containerbmw .futuresbmw .enginebmw:hover,.transmissionbmw:hover,.powerbmw:hover,.brakebmw:hover{
+    background-image: linear-gradient(to right,#26ba69 20%,#00ff73 80%);
+    color: #ffff;
+    font-weight: 500;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.containerlam{
+    width: 100%;height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.containerlam .headerlam{
+    width: 100%;
+    margin: 2% auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.containerlam .headerlam .buttonslam{
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+
+}
+.containerlam .headerlam .buttonslam button{
+    width: 120px;height: 40px;
+    border-radius: 20px;
+    border: none;outline: none;
+    cursor: pointer;
+    font-weight: 500;
+    color: #242b2e;
+}
+
+.containerlam .headerlam .buttonslam button:hover{
+    color: #ffff;
+    background-image: linear-gradient(to right,#ffc400 20%,#f6ff00 80%);
+}
+
+.containerlam .main_contentlam{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    padding: 30px;
+}
+
+.containerlam .main_contentlam .contentlam{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: #242b2e;
+
+}
+
+.containerlam .main_contentlam .contentlam h1{
+    font-size: 52px;
+    letter-spacing: 2px;
+}
+
+.containerlam .main_contentlam .contentlam span{
+    font-size: 30px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.containerlam .main_contentlam .contentlam p{
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 500;
+
+}
+.containerlam .main_contentlam .car_imglam{
+    width: 100%;
+    height: 300px;
+    background: url(lambo.jpeg);
+    background-repeat: no-repeat;background-size: cover;
+}
+
+.containerlam .futureslam{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.containerlam .futureslam .enginelam,.transmissionlam,.powerlam,.brakelam{
+    width: 300px;
+    height: 90px;
+    padding: 4px;
+    margin: 25px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.containerlam .futureslam .enginelam img,.transmissionlam img,.powerlam img,.brakelam img{
+    width: 100px;height: 80px;
+    padding: 3px;
+    border-radius: 10px;
+
+}
+.containerlam .futureslam .enginelam:hover,.transmissionlam:hover,.powerlam:hover,.brakelam:hover{
+    background-image: linear-gradient(to right,#ffc400 20%,#f6ff00 80%);
+    color: #ffff;
+    font-weight: 500;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.containergtr{
+    width: 100%;height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.containergtr .headergtr{
+    width: 100%;
+    margin: 2% auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.containergtr .headergtr .buttonsgtr{
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+
+}
+.containergtr .headergtr .buttonsgtr button{
+    width: 120px;height: 40px;
+    border-radius: 20px;
+    border: none;outline: none;
+    cursor: pointer;
+    font-weight: 500;
+    color: #242b2e;
+}
+
+.containergtr .headergtr .buttonsgtr button:hover{
+    color: #ffff;
+    background-image: linear-gradient(to right,#674202 20%,#8f8051 80%);
+}
+
+.containergtr .main_contentgtr{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    padding: 30px;
+}
+
+.containergtr .main_contentgtr .contentgtr{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: #242b2e;
+
+}
+
+.containergtr .main_contentgtr .contentgtr h1{
+    font-size: 52px;
+    letter-spacing: 2px;
+}
+
+.containergtr .main_contentgtr .contentgtr span{
+    font-size: 30px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.containergtr .main_contentgtr .contentgtr p{
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 500;
+
+}
+.containergtr .main_contentgtr .car_imggtr{
+    width: 100%;
+    height: 300px;
+    background: url(gtr.jpeg);
+    background-repeat: no-repeat;background-size: cover;
+}
+
+.containergtr .futuresgtr{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.containergtr .futuresgtr .enginegtr,.transmissiongtr,.powergtr,.brakegtr{
+    width: 300px;
+    height: 90px;
+    padding: 4px;
+    margin: 25px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.containergtr .futuresgtr .enginegtr img,.transmissiongtr img,.powergtr img,.brakegtr img{
+    width: 100px;height: 80px;
+    padding: 3px;
+    border-radius: 10px;
+
+}
+.containergtr .futuresgtr .enginegtr:hover,.transmissiongtr:hover,.powergtr:hover,.brakegtr:hover{
+    background-image: linear-gradient(to right,#674202 20%,#8f8051 80%);
+    color: #ffff;
+    font-weight: 500;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.containerferr{
+    width: 100%;height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.containerferr .headerferr{
+    width: 100%;
+    margin: 2% auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.containerferr .headerferr .buttonsferr{
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+
+}
+.containerferr .headerferr .buttonsferr button{
+    width: 120px;height: 40px;
+    border-radius: 20px;
+    border: none;outline: none;
+    cursor: pointer;
+    font-weight: 500;
+    color: #242b2e;
+}
+
+.containerferr .headerferr .buttonsferr button:hover{
+    color: #ffff;
+    background-image: linear-gradient(to right,#ff0000 20%,#f98d8d 80%);
+}
+
+.containerferr .main_contentferr{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    padding: 30px;
+}
+
+.containerferr .main_contentferr .contentferr{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: #242b2e;
+
+}
+
+.containerferr .main_contentferr .contentferr h1{
+    font-size: 52px;
+    letter-spacing: 2px;
+}
+
+.containerferr .main_contentferr .contentferr span{
+    font-size: 30px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.containerferr .main_contentferr .contentferr p{
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 500;
+
+}
+.containerferr .main_contentferr .car_imgferr{
+    width: 100%;
+    height: 300px;
+    background: url(ferrari.jpeg);
+    background-repeat: no-repeat;background-size: cover;
+}
+
+.containerferr .futuresferr{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.containerferr .futuresferr .engineferr,.transmissionferr,.powerferr,.brakeferr{
+    width: 300px;
+    height: 90px;
+    padding: 4px;
+    margin: 25px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.containerferr .futuresferr .engineferr img,.transmissionferr img,.powerferr img,.brakeferr img{
+    width: 100px;height: 80px;
+    padding: 3px;
+    border-radius: 10px;
+
+}
+.containerferr .futuresferr .engineferr:hover,.transmissionferr:hover,.powerferr:hover,.brakeferr:hover{
+    background-image: linear-gradient(to right,#ff0000 20%,#f98d8d 80%);
+    color: #ffff;
+    font-weight: 500;
+
+}

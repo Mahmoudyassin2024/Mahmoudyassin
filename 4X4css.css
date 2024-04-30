@@ -1,0 +1,662 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.mahmoudd{
+    font-size: 12px;
+    margin-top: 20px;
+    color: #222;
+    text-decoration: none;
+    font-weight: 600;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+  }
+
+.container{
+    width: 100%;height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.container .header{
+    width: 100%;
+    margin: 2% auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.container .header .logo {
+    width: 50px;
+    height: 50px;
+    background: url(sedan.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container .header .nav ul{
+    display: flex;
+    gap: 30px;
+}
+.container .header .nav ul li{
+    font-size: 14x;
+    font-weight: 500;
+    list-style: none;
+    letter-spacing: 1px;
+}
+.container .header .nav ul li a{
+    padding: 10px;
+    outline: none;
+    text-decoration: none;
+    cursor: pointer;
+    color: #242b2e;
+}
+.container .header .nav ul li a:hover{
+    border-bottom: 2px solid #4facfe;
+}
+.container .header .buttons{
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+
+}
+.container .header .buttons button{
+    width: 120px;height: 40px;
+    border-radius: 20px;
+    border: none;outline: none;
+    cursor: pointer;
+    font-weight: 500;
+    color: #242b2e;
+}
+
+.container .header .buttons button:hover{
+    color: #ffff;
+    background-image: linear-gradient(to right,#26422c 20%,#237244 80%);
+}
+
+.container .main_content{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    padding: 30px;
+}
+
+.container .main_content .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: #242b2e;
+
+}
+
+.container .main_content .content h1{
+    font-size: 52px;
+    letter-spacing: 2px;
+}
+
+.container .main_content .content span{
+    font-size: 30px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.container .main_content .content p{
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 500;
+
+}
+.container .main_content .car_img{
+    width: 100%;
+    height: 300px;
+    background: url(x61.jpg);
+    background-repeat: no-repeat;background-size: cover;
+}
+
+.container .futures{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.container .futures .engine,.transmission,.power,.brake{
+    width: 300px;
+    height: 90px;
+    padding: 4px;
+    margin: 25px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.container .futures .engine img,.transmission img,.power img,.brake img{
+    width: 100px;height: 80px;
+    padding: 3px;
+    border-radius: 10px;
+
+}
+.container .futures .engine:hover,.transmission:hover,.power:hover,.brake:hover{
+    background-image: linear-gradient(to right,#26422c 20%,#237244 80%);
+    color: #ffff;
+    font-weight: 500;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.containerg{
+    width: 100%;height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.containerg .headerg{
+    width: 100%;
+    margin: 2% auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.containerg .headerg .buttonsg{
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+
+}
+.containerg .headerg .buttonsg button{
+    width: 120px;height: 40px;
+    border-radius: 20px;
+    border: none;outline: none;
+    cursor: pointer;
+    font-weight: 500;
+    color: #242b2e;
+}
+
+.containerg .headerg .buttonsg button:hover{
+    color: #ffff;
+    background-image: linear-gradient(to right,#694e2e 20%,#443355 80%);
+}
+
+.containerg .main_contentg{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    padding: 30px;
+}
+
+.containerg .main_contentg .contentg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: #242b2e;
+
+}
+
+.containerg .main_contentg .contentg h1{
+    font-size: 52px;
+    letter-spacing: 2px;
+}
+
+.containerg .main_contentg .contentg span{
+    font-size: 30px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.containerg .main_contentg .contentg p{
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 500;
+
+}
+.containerg .main_contentg .car_imgg{
+    width: 100%;
+    height: 300px;
+    background: url(gclass.jpeg);
+    background-repeat: no-repeat;background-size: cover;
+}
+
+.containerg .futuresg{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.containerg .futuresg .engineg,.transmissiong,.powerg,.brakeg{
+    width: 300px;
+    height: 90px;
+    padding: 4px;
+    margin: 25px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.containerg .futuresg .engineg img,.transmissiong img,.powerg img,.brakeg img{
+    width: 100px;height: 80px;
+    padding: 3px;
+    border-radius: 10px;
+
+}
+.containerg .futuresg .engineg:hover,.transmissiong:hover,.powerg:hover,.brakeg:hover{
+    background-image: linear-gradient(to right,#694e2e 20%,#ea9d2a 80%);
+    color: #ffff;
+    font-weight: 500;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.containerlm{
+    width: 100%;height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.containerlm .headerlm{
+    width: 100%;
+    margin: 2% auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.containerlm .headerlm .buttonslm{
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+
+}
+.containerlm .headerlm .buttonslm button{
+    width: 120px;height: 40px;
+    border-radius: 20px;
+    border: none;outline: none;
+    cursor: pointer;
+    font-weight: 500;
+    color: #242b2e;
+}
+
+.containerlm .headerlm .buttonslm button:hover{
+    color: #ffff;
+    background-image: linear-gradient(to right,#b039ff 20%,#1827ff 80%);
+}
+
+.containerlm .main_contentlm{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    padding: 30px;
+}
+
+.containerlm .main_contentlm .contentlm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: #242b2e;
+
+}
+
+.containerlm .main_contentlm .contentlm h1{
+    font-size: 52px;
+    letter-spacing: 2px;
+}
+
+.containerlm .main_contentlm .contentlm span{
+    font-size: 30px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.containerlm .main_contentlm .contentlm p{
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 500;
+
+}
+.containerlm .main_contentlm .car_imglm{
+    width: 100%;
+    height: 300px;
+    background: url(urus.jpeg);
+    background-repeat: no-repeat;background-size: cover;
+}
+
+.containerlm .futureslm{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.containerlm .futureslm .enginelm,.transmissionlm,.powerlm,.brakelm{
+    width: 300px;
+    height: 90px;
+    padding: 4px;
+    margin: 25px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.containerlm .futureslm .enginelm img,.transmissionlm img,.powerlm img,.brakelm img{
+    width: 100px;height: 80px;
+    padding: 3px;
+    border-radius: 10px;
+
+}
+.containerlm .futureslm .enginelm:hover,.transmissionlm:hover,.powerlm:hover,.brakelm:hover{
+    background-image: linear-gradient(to right,#ac31fe 20%,#0011ff 80%);
+    color: #ffff;
+    font-weight: 500;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.containerpo{
+    width: 100%;height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.containerpo .headerpo{
+    width: 100%;
+    margin: 2% auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.containerpo .headerpo .buttonspo{
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+
+}
+.containerpo .headerpo .buttonspo button{
+    width: 120px;height: 40px;
+    border-radius: 20px;
+    border: none;outline: none;
+    cursor: pointer;
+    font-weight: 500;
+    color: #242b2e;
+}
+
+.containerpo .headerpo .buttonspo button:hover{
+    color: #ffff;
+    background-image: linear-gradient(to right,#312434 20%,#726484 80%);
+}
+
+.containerpo .main_contentpo{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    padding: 30px;
+}
+
+.containerpo .main_contentpo .contentpo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: #242b2e;
+
+}
+
+.containerpo .main_contentpo .contentpo h1{
+    font-size: 52px;
+    letter-spacing: 2px;
+}
+
+.containerpo .main_contentpo .contentpo span{
+    font-size: 30px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.containerpo .main_contentpo .contentpo p{
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 500;
+
+}
+.containerpo .main_contentpo .car_imgpo{
+    width: 100%;
+    height: 300px;
+    background: url(cayan.jpeg);
+    background-repeat: no-repeat;background-size: cover;
+}
+
+.containerpo .futurespo{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.containerpo .futurespo .enginepo,.transmissionpo,.powerpo,.brakepo{
+    width: 300px;
+    height: 90px;
+    padding: 4px;
+    margin: 25px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.containerpo .futurespo .enginepo img,.transmissionpo img,.powerpo img,.brakepo img{
+    width: 100px;height: 80px;
+    padding: 3px;
+    border-radius: 10px;
+
+}
+.containerpo .futurespo .enginepo:hover,.transmissionpo:hover,.powerpo:hover,.brakepo:hover{
+    background-image: linear-gradient(to right,#312434 20%,#726484 80%);
+    color: #ffff;
+    font-weight: 500;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.containerr{
+    width: 100%;height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.containerr .headerr{
+    width: 100%;
+    margin: 2% auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.containerr .headerr .buttonsr{
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+
+}
+.containerr .headerr .buttonsr button{
+    width: 120px;height: 40px;
+    border-radius: 20px;
+    border: none;outline: none;
+    cursor: pointer;
+    font-weight: 500;
+    color: #242b2e;
+}
+
+.containerr .headerr .buttonsr button:hover{
+    color: #ffff;
+    background-image: linear-gradient(to right,#185e70 20%,#499ca7 80%);
+}
+
+.containerr .main_contentr{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    padding: 30px;
+}
+
+.containerr .main_contentr .contentr{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: #242b2e;
+
+}
+
+.containerr .main_contentr .contentr h1{
+    font-size: 52px;
+    letter-spacing: 2px;
+}
+
+.containerr .main_contentr .contentr span{
+    font-size: 30px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.containerr .main_contentr .contentr p{
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 500;
+
+}
+.containerr .main_contentr .car_imgr{
+    width: 100%;
+    height: 300px;
+    background: url(range.jpeg);
+    background-repeat: no-repeat;background-size: cover;
+}
+
+.containerr .futuresr{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.containerr .futuresr .enginer,.transmissionr,.powerr,.braker{
+    width: 300px;
+    height: 90px;
+    padding: 4px;
+    margin: 25px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.containerr .futuresr .enginer img,.transmissionr img,.powerr img,.braker img{
+    width: 100px;height: 80px;
+    padding: 3px;
+    border-radius: 10px;
+
+}
+.containerr .futuresr .enginer:hover,.transmissionr:hover,.powerr:hover,.braker:hover{
+    background-image: linear-gradient(to right,#185e70 20%,#499ca7 80%);
+    color: #ffff;
+    font-weight: 500;
+
+}

@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+  }
+  
+  body {
+    height: 100vh;
+    background : #eaeaea;
+    display: grid;
+    place-items: center;
+    font-family: "Inter", sans-serif;
+    color: white;
+
+  }
+  
+  
+  .body {
+    background-color: #eaeaea;
+  }
+  
+  
+  .header {
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 8%;
+    background:   #eaeaea ;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+  }
+  
+  
+  .navbar a{
+    display: inline-block;
+    font-size: 18px;
+    color: #222;
+    text-decoration: none;
+    font-weight: 500;
+    margin: 0 20px;
+    transition: .3s;
+    opacity: 0;
+    animation: slideTop .5s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+  }
+  
+  .logo {
+    position: absolute;
+    left: 30px;
+    top:20px;
+    font-size: 35px;
+    color: #222;
+    text-decoration: none;
+    font-weight: 600;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+  }
+  .navbar a:hover,
+.navbar a.active {
+    color: #1743e3;
+}
+
+  
+  @keyframes slideTop {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+  
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+  
+  }
+  
+  
+  @keyframes slideRight {
+    100% {
+        transform: translatex(100px);
+        opacity: 1;
+    }
+  
+    0% {
+        transform: translatex(0);
+        opacity: 0;
+    }
+  
+  }
+  .porsche img{
+    position:absolute;
+    width:320px;height:200px;
+    left:20px;
+    top:150px;
+    animation: slideRight 1s ease forwards;
+    border-radius: 10px;
+  }
+  .porsche p{
+    display: inline-block;
+    position: absolute;
+    text-decoration: none;
+    font-size: 30px;
+    color: black;
+    animation: slideRight 2s ease forwards;
+    top: 150px;
+    left: 350px;
+
+  }
+  .like1 {
+    position: absolute;
+    animation: slideRight 3s ease forwards;
+    top:150px ;
+    right:0px ;
+  }
+  .dodge img{
+    position:absolute;
+    width:320px;height:200px;
+    left:20px;
+    top:400px;
+    animation: slideRight 1s ease forwards;
+    border-radius: 10px;
+  }
+  .dodge p{
+    display: inline-block;
+    position: absolute;
+    text-decoration: none;
+    font-size: 30px;
+    color: black;
+    animation: slideRight 2s ease forwards;
+    top: 400px;
+    left: 350px;
+
+  }
+  .like2 {
+    position: absolute;
+    animation: slideRight 3s ease forwards;
+    top:400px ;
+    right:0px ;
+  }
+  .bmw img{
+    position:absolute;
+    width:320px;height:200px;
+    left:20px;
+    top:650px;
+    animation: slideRight 1s ease forwards;
+    border-radius: 10px;
+  }
+  .bmw p{
+    display: inline-block;
+    position: absolute;
+    text-decoration: none;
+    font-size: 30px;
+    color: black;
+    animation: slideRight 2s ease forwards;
+    top: 650px;
+    left: 350px;
+
+  }
+  .like3 {
+    position: absolute;
+    animation: slideRight 3s ease forwards;
+    top:650px ;
+    right:0px ;
+  }
+  .ford img{
+    position:absolute;
+    width:320px;height:200px;
+    left:20px;
+    top:900px;
+    animation: slideRight 1s ease forwards;
+    border-radius: 10px;
+  }
+  .ford p{
+    display: inline-block;
+    position: absolute;
+    text-decoration: none;
+    font-size: 30px;
+    color: black;
+    animation: slideRight 2s ease forwards;
+    top: 900px;
+    left: 350px;
+
+  }
+  .like4 {
+    position: absolute;
+    animation: slideRight 3s ease forwards;
+    top:900px ;
+    right:0px ;
+  }
+  .lamborghini img{
+    position:absolute;
+    width:320px;height:200px;
+    left:20px;
+    top:1150px;
+    animation: slideRight 1s ease forwards;
+    border-radius: 10px;
+  }
+  .lamborghini p{
+    display: inline-block;
+    position: absolute;
+    text-decoration: none;
+    font-size: 30px;
+    color: black;
+    animation: slideRight 2s ease forwards;
+    top: 1150px;
+    left: 350px;
+
+  }
+  .like5 {
+    position: absolute;
+    animation: slideRight 3s ease forwards;
+    top:1150px ;
+    right:0px ;
+  }
+  .yahya {
+    font-size: 12px;
+    color: #222;
+    text-decoration: none;
+    font-weight: 600;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+  }

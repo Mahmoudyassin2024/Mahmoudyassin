@@ -1,0 +1,134 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;   
+     font-family: "Poppins", sans-serif;                    
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 8%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+  }
+  
+  
+  .navbar a {
+    display: inline-block;
+    font-size: 18px;
+    color: wheat;
+    text-decoration: none;
+    font-weight: 500;
+    margin: 0 20px;
+    transition: .3s;
+    opacity: 0;
+    animation: slideTop .5s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+  }
+  
+  .logo {
+    font-size: 25px;
+    color: wheat;
+    text-decoration: none;
+    font-weight: 600;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+  }
+  
+  .mahmoud {
+    font-size: 12px;
+    color: wheat;
+    text-decoration: none;
+    font-weight: 600;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+  }
+  
+  .navbar a:hover,
+  .navbar a.active {
+    color: #1743e3;
+  }
+  
+  @keyframes slideTop {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+  
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+  
+  }
+  
+  
+  @keyframes slideRight {
+    100% {
+        transform: translatex(100px);
+        opacity: 1;
+    }
+  
+    0% {
+        transform: translatex(0);
+        opacity: 0;
+    }
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    padding: 5%;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(169, 94, 44, 0.5)), url(1678607431812.jpeg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search-bar{
+    width: 100%;
+    max-width: 700px;
+    background: rgba(255,255 ,255 ,0.2 );
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 10px 20px;
+    backdrop-filter: blur(2px) saturate(180%);
+}
+.search-bar input{
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 24px 20px;
+    font-size: 20px;
+    color: #ffffff;
+}
+::placeholder{
+    color: #ff870f;
+}
+
+.search-bar button img{
+    width: 25px;
+}
+
+.search-bar button{
+    border: 0;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background: #ff870f;
+    cursor: pointer;
+}
